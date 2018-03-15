@@ -1,0 +1,10 @@
+students<-list(
+    a1=list(name="James",age =25,gender ="M",interest =c("reading","writing")),
+    a2=list(name="Jenny",age =22,gender ="F",interest =c("cooking")),
+    a3=list(name="David",age =24,gender ="M",interest =c("running","basketball"))
+)
+lapply(students,function(s){
+    type<-switch(s$gender,"M"="man","F"="woman")
+    interest<-paste(s$interest,collapse = ",")
+    sprintf("%s,%d year-old %s, loves %s.", s$name,s$age,type,interest)
+})
