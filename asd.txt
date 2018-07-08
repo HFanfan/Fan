@@ -8,3 +8,4 @@ lapply(students,function(s){
     interest<-paste(s$interest,collapse = ",")
     sprintf("%s,%d year-old %s, loves %s.", s$name,s$age,type,interest)
 })
+asdasdasdasd
